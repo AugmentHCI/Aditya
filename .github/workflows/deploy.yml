@@ -32,25 +32,24 @@ jobs:
 
       # If you are using Vite/React Router SPA, ensure 404.html points to index.html
       - name: Build
-        run: |
-          npm run build
-          if [ -f dist/index.html ]; then
-            cp dist/index.html dist/404.html
-          elif [ -f build/index.html ]; then
-            cp build/index.html build/404.html
-          fi
+        run: npm run build
 
-      - name: Resolve publish dir
+      - name: Resolve publish dir (supports React Router plugin)
         id: pubdir
         run: |
-          if [ -d dist ]; then
+          if [ -f dist/client/index.html ]; then
+            echo "dir=dist/client" >> $GITHUB_OUTPUT
+          elif [ -f dist/index.html ]; then
             echo "dir=dist" >> $GITHUB_OUTPUT
-          elif [ -d build ]; then
+          elif [ -f build/client/index.html ]; then
+            echo "dir=build/client" >> $GITHUB_OUTPUT
+          elif [ -f build/index.html ]; then
             echo "dir=build" >> $GITHUB_OUTPUT
           else
-            echo "❌ No dist or build directory found. Please check your build script."
+            echo "❌ No build output found (dist/ or build/)."
             exit 1
           fi
+          cp "${{ steps.pubdir.outputs.dir }}/index.html" "${{ steps.pubdir.outputs.dir }}/404.html"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
