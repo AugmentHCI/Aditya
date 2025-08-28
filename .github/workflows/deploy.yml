@@ -49,7 +49,9 @@ jobs:
             echo "❌ No build output found (dist/ or build/)."
             exit 1
           fi
-          cp "${{ steps.pubdir.outputs.dir }}/index.html" "${{ steps.pubdir.outputs.dir }}/404.html"
+
+      - name: Add SPA fallback 404.html
+        run: cp "${{ steps.pubdir.outputs.dir }}/index.html" "${{ steps.pubdir.outputs.dir }}/404.html"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
