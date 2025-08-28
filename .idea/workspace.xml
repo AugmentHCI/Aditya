@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="61359c56-6ee2-489a-9cad-cdf8b972d224" name="Changes" comment="add fallback for SPA 404 error handling in deployment workflow">
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Aditya.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/root.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/welcome/welcome.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/amazon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/amazon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/augment.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/augment.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="31v5CNq9slpRt2E3dEx1nkw0O8q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yizhe/Developer/Aditya&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.411" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61359c56-6ee2-489a-9cad-cdf8b972d224" name="Changes" comment="" />
+      <created>1745403966295</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745403966295</updated>
+      <workItem from="1745403967802" duration="201000" />
+      <workItem from="1756391578958" duration="2090000" />
+      <workItem from="1756393697156" duration="1267000" />
+      <workItem from="1756395048666" duration="2082000" />
+      <workItem from="1756397185180" duration="284000" />
+    </task>
+    <task id="LOCAL-00001" summary="add initial HTML structure and project configuration files">
+      <option name="closed" value="true" />
+      <created>1756393237460</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756393237460</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initialize project with React Router and TailwindCSS setup">
+      <option name="closed" value="true" />
+      <created>1756395084232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1756395084232</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add GitHub Actions workflow for deployment and update router config for SPA">
+      <option name="closed" value="true" />
+      <created>1756395416517</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756395416517</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update GitHub Actions workflow to improve build output handling for SPA">
+      <option name="closed" value="true" />
+      <created>1756395953535</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756395953535</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add fallback for SPA 404 error handling in deployment workflow">
+      <option name="closed" value="true" />
+      <created>1756396026368</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756396026368</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add fallback for SPA 404 error handling in deployment workflow">
+      <option name="closed" value="true" />
+      <created>1756396288059</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756396288059</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add initial HTML structure and project configuration files" />
+    <MESSAGE value="initialize project with React Router and TailwindCSS setup" />
+    <MESSAGE value="add GitHub Actions workflow for deployment and update router config for SPA" />
+    <MESSAGE value="update GitHub Actions workflow to improve build output handling for SPA" />
+    <MESSAGE value="add fallback for SPA 404 error handling in deployment workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fallback for SPA 404 error handling in deployment workflow" />
+  </component>
+</project>

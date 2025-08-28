@@ -1,8 +1,8 @@
-name: Deploy to GitHub Pages
+name: Deploy static site to Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -10,61 +10,22 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  build:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      # If you are using Vite/React Router SPA, ensure 404.html points to index.html
-      - name: Build
-        run: npm run build
-
-      - name: Resolve publish dir (supports React Router plugin)
-        id: pubdir
-        run: |
-          if [ -f dist/client/index.html ]; then
-            echo "dir=dist/client" >> $GITHUB_OUTPUT
-          elif [ -f dist/index.html ]; then
-            echo "dir=dist" >> $GITHUB_OUTPUT
-          elif [ -f build/client/index.html ]; then
-            echo "dir=build/client" >> $GITHUB_OUTPUT
-          elif [ -f build/index.html ]; then
-            echo "dir=build" >> $GITHUB_OUTPUT
-          else
-            echo "❌ No build output found (dist/ or build/)."
-            exit 1
-          fi
-
-      - name: Add SPA fallback 404.html
-        run: cp "${{ steps.pubdir.outputs.dir }}/index.html" "${{ steps.pubdir.outputs.dir }}/404.html"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ steps.pubdir.outputs.dir }}
+          path: .
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
